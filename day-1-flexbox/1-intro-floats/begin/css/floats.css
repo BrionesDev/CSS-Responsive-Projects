@@ -64,14 +64,13 @@ div img {
 
 /* ROW 2 */
 .row-2 article[class*="cell-"] {
-	width: 45%;
 	background: rgb(225, 160, 255);
-	float: left;
+	width: 45%;
 }
 
 .row-2 .cell-1 {
 	margin-left: 2.2%;
-	margin-right: 4.8%;
+	margin-right: 4.4%;
 }
 
 .row-2::after {
@@ -82,17 +81,38 @@ div img {
 /* ROW 3 */
 .row-3 article[class*="cell-"] {
 	background: lightseagreen;
-	float: left;
 }
 
 .row-3 .cell-1 {
-	width: 65%;
+	width: 60%;
 	margin-left: 2.2%;
+	margin-right: 4.4%;
 }
 
-.row-3 .cell-1 {
-	width: 65%;
-	margin-left: 2.2%;	
+.row-3 .cell-2 {
+	width: 30%;
+}
+
+.row-3::after {
+	content: "";
+	clear: both;
+}
+
+/* ROW 4 */
+.row-4 {
+	margin-bottom: 3%;
+}
+
+.row-4 .cell-1 {
+	background: rgb(100, 207, 136);
+	width: 95%;
+	margin-left: 2.2%;
+	margin-right: 2.2%;
+}
+
+.row-4::after {
+	content: "";
+	clear: both;
 }
 
 /* Mobile Landscape Screen Sizes */
