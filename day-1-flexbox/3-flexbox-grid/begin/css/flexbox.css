@@ -32,12 +32,48 @@ div img {
 
 /* grid system -- mobile first! */
 
+/* General classes to all devices */
+[class*="row-"] {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background: lightcoral;
+	text-align: center;
+	border: solid black 2px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+[class*="cell-"] img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row-1 [class*="cell-"] { background: lightblue; }
+.row-2 [class*="cell-"] { background: lightgreen; }
+.row-3 [class*="cell-"] { background: lightseagreen; }
+.row-4 [class*="cell-"] { background: lightsalmon; }
+[class*="row-"] a { font-weight: bold; }
 
 /* Mobile Landscape Screen Sizes */
 @media only screen and (min-width: 480px)  {
 
 }
-/* Desktop screen Sizes */
-@media only screen and (min-width: 768px) {
 
+/* Desktop screen Sizes */
+@media only screen and (min-width: 768px) {	
+	/* First ROW */	
+	.row-1 [class*="cell-"] { flex-basis: 22%; }
+	
+	/* Second ROW */	
+	.row-2 [class*="cell-"] { flex-basis: 48%; }
+	
+	/* Third ROW */
+	.row-3 .cell-1 { flex-basis: 24%; }
+
+	.row-3 .cell-2 { flex-basis: 72%; }
+
+	/* Fourth ROW */
+	.row-4 .cell-1 { flex-basis: 100%; }
 }
