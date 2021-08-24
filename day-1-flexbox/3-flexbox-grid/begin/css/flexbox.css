@@ -58,6 +58,10 @@ div img {
 .row-5 [class*="cell-"] { background: lightpink; }
 [class*="row-"] a { font-weight: bold; }
 
+.reverse {
+	flex-direction: row-reverse;
+}
+
 /* Mobile Landscape Screen Sizes */
 @media only screen and (min-width: 480px)  {
 	/* First ROW */
