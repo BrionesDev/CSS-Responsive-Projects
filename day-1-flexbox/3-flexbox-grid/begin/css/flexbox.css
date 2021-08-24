@@ -51,10 +51,11 @@ div img {
 	margin-right: auto;
 }
 
-.row-1 [class*="cell-"] { background: lightblue; }
+.row-1 [class*="cell-"] { background: lightskyblue; }
 .row-2 [class*="cell-"] { background: lightgreen; }
 .row-3 [class*="cell-"] { background: lightseagreen; }
 .row-4 [class*="cell-"] { background: lightsalmon; }
+.row-5 [class*="cell-"] { background: lightpink; }
 [class*="row-"] a { font-weight: bold; }
 
 /* Mobile Landscape Screen Sizes */
@@ -64,10 +65,10 @@ div img {
 	.row-1 [class*="cell-"]:nth-child(1n+3) { margin-bottom: 0; }
 
 	/* Second ROW */
-	.row-2 [class*="cell-"] { flex-basis: 48%;}
+	.row-2 [class*="cell-"] { flex-basis: 48%; }
 
 	/* Third ROW */
-	.row-3 [class*="cell-"] { flex-basis: 48%;}
+	.row-3 [class*="cell-"] { flex-basis: 48%; }
 
 	/* Fourth ROW */
 	.row-4 .cell-1 { flex-basis: 100%; }
@@ -88,4 +89,14 @@ div img {
 
 	/* Fourth ROW */
 	.row-4 .cell-1 { flex-basis: 100%; }
+
+	/* Fifth ROW */
+	.row-5 [class*="cell-"] { flex: 0 1 32%; }
+	.row-5 .cell-2 { flex-grow: 2; }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	/* Fifth ROW */
+	.row-5 .cell-2 { flex: 2 1 100%; order: -1; margin-bottom: 10px; }
+	.row-5 .cell-1, .row-5 .cell-3 { flex-basis: 48%; }
 }
